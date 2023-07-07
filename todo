@@ -1,0 +1,30 @@
+entities:
+
+register file (morteza):
+input (read reg 1, read reg 2, write reg 1, write date, reg write) output (data1, data2)
+
+data memory (parsa):
+input (address(12 bit)) output (16 bit)
+
+Instruction memory (parsa):
+input (address(10 bit)) output (16 bit)
+
+
+*Stages:*
+Instruction Fetch (morteza):
+pc(16 bit) data (16 bit)
+-- data must be  in a stage register
+
+Decode Stage (morteza):
+input (Instruction 16 bit)
+output (regData 1, regData 2, )
+
+
+Exec Stage (parsa):
+
+Mem Stage (parsa):
+
+WB Stage (parsa):
+
+
+CPU:
