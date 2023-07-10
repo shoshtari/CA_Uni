@@ -1,0 +1,310 @@
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Error: COMP96_0018: mem_stage.vhd : (22, 3): Identifier expected.
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Error: COMP96_0015: mem_stage.vhd : (58, 1): ';' expected.
+# Error: COMP96_0015: mem_stage.vhd : (87, 1): ',' expected.
+# Error: COMP96_0015: mem_stage.vhd : (87, 1): ';' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Error: COMP96_0015: mem_stage.vhd : (58, 1): ';' expected.
+# Error: COMP96_0015: mem_stage.vhd : (87, 1): ',' expected.
+# Error: COMP96_0015: mem_stage.vhd : (87, 1): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Error: COMP96_0015: mem_stage.vhd : (87, 1): ',' expected.
+# Error: COMP96_0015: mem_stage.vhd : (87, 1): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Warning: ELAB1_0026: mem_stage.vhd : (61, 0): There is no default binding for component "alu". (No entity named "alu" was found).
+# Error: COMP96_0083: mem_stage.vhd : (74, 34): The type of a choice expression does not match the select expression.
+# Error: COMP96_0078: mem_stage.vhd : (77, 6): Unknown identifier "addm".
+# Error: COMP96_0133: mem_stage.vhd : (77, 6): Cannot find object declaration.
+# Error: COMP96_0584: mem_stage.vhd : (77, 6): Cannot determine the type of the select expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Error: COMP96_0078: mem_stage.vhd : (81, 6): Unknown identifier "addm".
+# Error: COMP96_0133: mem_stage.vhd : (81, 6): Cannot find object declaration.
+# Error: COMP96_0584: mem_stage.vhd : (81, 6): Cannot determine the type of the select expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Compile failure 7 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/data_memory.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (48, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Error: COMP96_0083: mem_stage.vhd : (74, 34): The type of a choice expression does not match the select expression.
+# Error: COMP96_0078: mem_stage.vhd : (77, 6): Unknown identifier "addm".
+# Error: COMP96_0133: mem_stage.vhd : (77, 6): Cannot find object declaration.
+# Error: COMP96_0584: mem_stage.vhd : (77, 6): Cannot determine the type of the select expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Error: COMP96_0078: mem_stage.vhd : (81, 6): Unknown identifier "addm".
+# Error: COMP96_0133: mem_stage.vhd : (81, 6): Cannot find object declaration.
+# Error: COMP96_0584: mem_stage.vhd : (81, 6): Cannot determine the type of the select expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Error: COMP96_0078: mem_stage.vhd : (77, 6): Unknown identifier "addm".
+# Error: COMP96_0133: mem_stage.vhd : (77, 6): Cannot find object declaration.
+# Error: COMP96_0584: mem_stage.vhd : (77, 6): Cannot determine the type of the select expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Error: COMP96_0078: mem_stage.vhd : (81, 6): Unknown identifier "addm".
+# Error: COMP96_0133: mem_stage.vhd : (81, 6): Cannot find object declaration.
+# Error: COMP96_0584: mem_stage.vhd : (81, 6): Cannot determine the type of the select expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Error: COMP96_0083: mem_stage.vhd : (78, 27): The type of a choice expression does not match the select expression.
+# Error: COMP96_0083: mem_stage.vhd : (82, 27): The type of a choice expression does not match the select expression.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/mem_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/exec_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Error: COMP96_0015: exec_stage.vhd : (11, 8): ':' expected.
+# Error: COMP96_0018: exec_stage.vhd : (11, 8): Identifier expected.
+# Error: COMP96_0016: exec_stage.vhd : (11, 11): Design unit declaration expected.
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# Error: COMP96_0015: exec_stage.vhd : (36, 1): ';' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/exec_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# Error: COMP96_0015: exec_stage.vhd : (36, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/exec_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# Error: COMP96_0078: exec_stage.vhd : (40, 13): Unknown identifier "Imm".
+# Error: COMP96_0133: exec_stage.vhd : (40, 13): Cannot find object declaration.
+# Error: COMP96_0077: exec_stage.vhd : (40, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0083: exec_stage.vhd : (40, 22): The type of a choice expression does not match the select expression.
+# Error: COMP96_0078: exec_stage.vhd : (43, 1): Unknown identifier "src1".
+# Error: COMP96_0133: exec_stage.vhd : (43, 1): Cannot find object declaration.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/exec_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# Error: COMP96_0083: exec_stage.vhd : (40, 24): The type of a choice expression does not match the select expression.
+# Error: COMP96_0078: exec_stage.vhd : (43, 1): Unknown identifier "src1".
+# Error: COMP96_0133: exec_stage.vhd : (43, 1): Cannot find object declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/exec_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# Error: COMP96_0078: exec_stage.vhd : (43, 1): Unknown identifier "src1".
+# Error: COMP96_0133: exec_stage.vhd : (43, 1): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/exec_stage.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16Bit"
+# Error: COMP96_0015: adder.vhd : (20, 9): ';' expected.
+# Error: COMP96_0015: adder.vhd : (22, 81): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16Bit"
+# Error: COMP96_0015: adder.vhd : (22, 81): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16Bit"
+# Error: COMP96_0015: adder.vhd : (22, 79): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16Bit"
+# Error: COMP96_0019: adder.vhd : (22, 80): Keyword 'end' expected.
+# Error: COMP96_0019: adder.vhd : (23, 13): Keyword 'process' expected.
+# Error: COMP96_0329: adder.vhd : (28, 9): Generate statement must have a label.
+# Error: COMP96_0019: adder.vhd : (28, 58): Keyword 'generate' expected.
+# Error: COMP96_0019: adder.vhd : (30, 9): Keyword 'end' expected.
+# Error: COMP96_0016: adder.vhd : (31, 13): Design unit declaration expected.
+# Error: COMP96_0019: adder.vhd : (34, 29): Keyword 'of' expected.
+# Error: COMP96_0018: adder.vhd : (34, 29): Identifier expected.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16Bit"
+# Error: COMP96_0015: adder.vhd : (22, 79): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16Bit"
+# Error: COMP96_0056: adder.vhd : (13, 1): Cannot find referenced entity declaration "Adder16Bit".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# Error: COMP96_0078: adder.vhd : (21, 13): Unknown identifier "temp_sum".
+# Error: COMP96_0133: adder.vhd : (21, 13): Cannot find object declaration.
+# Error: COMP96_0078: adder.vhd : (26, 9): Unknown identifier "carry_out".
+# Error: COMP96_0133: adder.vhd : (26, 9): Cannot find object declaration.
+# Error: COMP96_0393: adder.vhd : (28, 37): Cannot read output : "sum".
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# Error: COMP96_0078: adder.vhd : (26, 9): Unknown identifier "carry_out".
+# Error: COMP96_0133: adder.vhd : (26, 9): Cannot find object declaration.
+# Error: COMP96_0393: adder.vhd : (28, 37): Cannot read output : "sum".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# Error: COMP96_0393: adder.vhd : (28, 37): Cannot read output : "sum".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0019: alu.vhd : (28, 1): Keyword 'end' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0123: alu.vhd : (49, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (51, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (52, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (58, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (62, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (67, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (70, 3): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0123: alu.vhd : (51, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (52, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (58, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (62, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (67, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (70, 3): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0123: alu.vhd : (67, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (70, 3): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0123: alu.vhd : (47, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (50, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (56, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (60, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (65, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0123: alu.vhd : (68, 3): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/data_memory.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/adder.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0019: alu.vhd : (76, 5): Keyword 'if' expected.
+# Error: COMP96_0015: alu.vhd : (76, 5): ';' expected.
+# Error: COMP96_0019: alu.vhd : (80, 5): Keyword 'process' expected.
+# Error: COMP96_0019: alu.vhd : (80, 14): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (56, 18): ';' expected.
+# Error: COMP96_0019: alu.vhd : (56, 18): Keyword 'end' expected.
+# Error: COMP96_0019: alu.vhd : (56, 109): Keyword 'end' expected.
+# Error: COMP96_0047: alu.vhd : (57, 3): Concurrent statement or ':' expected.
+# Error: COMP96_0019: alu.vhd : (60, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (60, 8): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (56, 18): ';' expected.
+# Error: COMP96_0019: alu.vhd : (56, 18): Keyword 'end' expected.
+# Error: COMP96_0019: alu.vhd : (56, 106): Keyword 'end' expected.
+# Error: COMP96_0047: alu.vhd : (57, 3): Concurrent statement or ':' expected.
+# Error: COMP96_0019: alu.vhd : (60, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (60, 8): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work CPU -2002  $dsn/src/alu.vhd
+# File: D:/Project/CA/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]

@@ -1,0 +1,5 @@
+i<>.\src\main.vhd
+i<>.\src\exec_stage.vhd
+i<>.\src\mem_stage.vhd
+i<>.\src\alu.vhd
+i<>.\src\wb_stage.vhd

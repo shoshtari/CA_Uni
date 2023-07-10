@@ -1,0 +1,5 @@
+.\src\data_memory.vhd
+.\src\exec_stage.vhd
+.\src\mem_stage.vhd
+.\src\alu.vhd
+.\src\adder.vhd

@@ -1,0 +1,11 @@
+18
+~E 1 "../src/adder.vhd" 4 Adder16
+~A 1 "../src/adder.vhd" 13 adder_struc
+~E 1 "../src/alu.vhd" 8 alu
+~A 1 "../src/alu.vhd" 20 alu_struc
+~E 1 "../src/main.vhd" 8 data_memory
+~A 1 "../src/data_memory.vhd" 22 dm_struc
+~E 1 "../src/exec_stage.vhd" 7 exec_stage
+~A 1 "../src/exec_stage.vhd" 21 exec_struc
+~E 1 "../src/mem_stage.vhd" 8 mem_stage
+~A 1 "../src/mem_stage.vhd" 27 mem_struc

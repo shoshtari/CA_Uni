@@ -1,0 +1,1 @@
+-w -erf D:/Project/CA/FinalProject/CPU/compile/CPU.erf -d D:/Project/CA/FinalProject/CPU/compile -s D:/Project/CA/FinalProject/library.cfg -j D:/Project/CA/FinalProject/CPU/projlib.cfg -work CPU -dbg -e 100 -work CPU -2002 D:/Project/CA/FinalProject/CPU/src/alu.vhd 

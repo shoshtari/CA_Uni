@@ -1,0 +1,4 @@
+MESSAGE "File: D:/Project/CA/FinalProject/CPU/src/alu.vhd" 
+MESSAGE "Compile Entity "alu"" 
+MESSAGE "Compile Architecture "alu_struc" of Entity "alu"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
