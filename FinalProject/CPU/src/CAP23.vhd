@@ -62,7 +62,8 @@ component instruction_decode IS
 
     instruction : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	clk : IN STD_LOGIC; -- clock.
-
+	pc_in : IN std_logic_vector(15 downto 0);
+	
 	-- register file write pins exported
 	write_reg1 : IN std_logic_vector(3 downto 0);
 	write_reg2 : IN std_logic_vector(3 downto 0);
@@ -78,7 +79,8 @@ component instruction_decode IS
 	rd : out std_logic_vector(15 downto 0);
 	rd_address : out std_logic_vector(3 downto 0);
 	extended_immediate : out std_logic_vector(15 downto 0);
-
+	pc_out : out std_logic_vector(15 downto 0);
+	
 	write_back : out std_logic;
 	mem_write : out std_logic;
 	is_addm : out std_logic;
@@ -203,9 +205,6 @@ BEGIN
 	output => mem_to_wb_get
 	); 
 	
-	
-	
-	
 	-- if
 	if_stage : instruction_fetch
 	port map(
@@ -223,6 +222,7 @@ BEGIN
 	port map(
 	instruction	=> instruction_get,
 	clk => clk,
+	pc_in => pc_get,
 	
 	write_reg1 => mem_to_wb_get(25 downto 22),
 	write_reg2 => "1001",
@@ -240,6 +240,7 @@ BEGIN
 	write_back => id_to_exec_set(7),
 	mem_write => id_to_exec_set(6),
 	
+	pc_out => pc_set,
 	alu_op => id_to_exec_set(5 downto 4),
 	alu_src => id_to_exec_set(3),
 	

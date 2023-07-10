@@ -1,0 +1,41 @@
+Active-HDL 12.0.118.7745 2023-07-10 14:45:42
+
+Elaboration top modules:
+Architecture                  gate_level(cap23)
+
+
+-----------------------------------------------------------------------------------------------------
+Entity             | Architecture | Library | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+cap23              | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+mid_reg            | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+instruction_fetch  | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+instruction_decode | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+exec_stage         | exec_struc   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+mem_stage          | mem_struc    | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+instruction_memory | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+controller         | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+register_file      | gate_level   | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+alu                | alu_struc    | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+Adder16            | adder_struc  | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+data_memory        | dm_struc     | cpu     |      | 12.0.118.7745 (Windows64) | -O3
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+VHDL Package                      | Library | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+standard                          | std     |      |                           | <unavailable>
+TEXTIO                            | std     |      |                           | <unavailable>
+std_logic_1164                    | ieee    |      |                           | <unavailable>
+NUMERIC_STD                       | ieee    |      |                           | <unavailable>
+std_logic_arith                   | ieee    |      |                           | <unavailable>
+STD_LOGIC_UNSIGNED                | ieee    |      |                           | <unavailable>
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+Library                           | Comment
+-----------------------------------------------------------------------------------------------------
+cpu                               | None
+ieee                              | Standard IEEE packages library
+std                               | Standard VHDL library
+-----------------------------------------------------------------------------------------------------

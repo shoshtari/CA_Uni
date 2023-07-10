@@ -6,6 +6,8 @@ ENTITY instruction_decode IS
 	PORT(
 
     instruction : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+	pc_in : IN std_logic_vector(15 downto 0);
+	
 	clk : IN STD_LOGIC; -- clock.
 
 	-- register file write pins exported
@@ -22,6 +24,7 @@ ENTITY instruction_decode IS
 	rs : out std_logic_vector(15 downto 0);
 	rd : out std_logic_vector(15 downto 0);
 	rd_address : out std_logic_vector(3 downto 0);
+	pc_out : out std_logic_vector(15 downto 0);
 	
 	extended_immediate : out std_logic_vector(15 downto 0);
 
@@ -76,11 +79,10 @@ component register_file IS
 
 END component;
 
-
-
 SIGNAL op : STD_LOGIC_VECTOR(3 DOWNTO 0);		   
 SIGNAL rs_address : std_logic_vector(3 downto 0);
 SIGNAL rd_address_in : std_logic_vector(3 downto 0);
+SIGNAL stall : integer := 0;
 
 SIGNAL immediate : std_logic_vector(7 downto 0);
 

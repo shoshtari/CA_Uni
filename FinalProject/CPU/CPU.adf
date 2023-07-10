@@ -3,48 +3,57 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
-compile=CPU
+compile=cpu
+
 [Library]
 CPU=.\CPU\CPU.lib
+
 [$LibMap$]
 CPU=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-[Files]
-/data_memory.vhd=-1
-/exec_stage.vhd=-1
-/mem_stage.vhd=-1
-/alu.vhd=-1
-/adder.vhd=-1
-/instruction_memory.vhd=-1
-/controller.vhd=-1
-/register_file.vhd=-1
-/if_stage.vhd=-1
-/id_stage.vhd=-1
-/CAP23.vhd=-1
-/mid_register.vhd=-1
-[Files.Data]
-.\src\data_memory.vhd=VHDL Source Code
-.\src\exec_stage.vhd=VHDL Source Code
-.\src\mem_stage.vhd=VHDL Source Code
-.\src\alu.vhd=VHDL Source Code
-.\src\adder.vhd=VHDL Source Code
-.\src\instruction_memory.vhd=VHDL Source Code
-.\src\controller.vhd=VHDL Source Code
-.\src\register_file.vhd=VHDL Source Code
-.\src\if_stage.vhd=VHDL Source Code
-.\src\id_stage.vhd=VHDL Source Code
-.\src\CAP23.vhd=VHDL Source Code
-.\src\mid_register.vhd=VHDL Source Code
+
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=cap23|gate_level|0 
 ShowHide=ShowTopLevel
 Selected=
+
 [SpecTracer]
 WindowVisible=0
+
+[Files]
+/register_file.vhd=-1
+/mid_register.vhd=-1
+/instruction_memory.vhd=-1
+/controller.vhd=-1
+/data_memory.vhd=-1
+/adder.vhd=-1
+/alu.vhd=-1
+/id_stage.vhd=-1
+/if_stage.vhd=-1
+/mem_stage.vhd=-1
+/exec_stage.vhd=-1
+/CAP23.vhd=-1
+
+[Files.Data]
+.\src\register_file.vhd=VHDL Source Code
+.\src\mid_register.vhd=VHDL Source Code
+.\src\instruction_memory.vhd=VHDL Source Code
+.\src\controller.vhd=VHDL Source Code
+.\src\data_memory.vhd=VHDL Source Code
+.\src\adder.vhd=VHDL Source Code
+.\src\alu.vhd=VHDL Source Code
+.\src\id_stage.vhd=VHDL Source Code
+.\src\if_stage.vhd=VHDL Source Code
+.\src\mem_stage.vhd=VHDL Source Code
+.\src\exec_stage.vhd=VHDL Source Code
+.\src\CAP23.vhd=VHDL Source Code
+
