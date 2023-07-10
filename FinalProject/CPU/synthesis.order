@@ -3,3 +3,10 @@ i<>.\src\exec_stage.vhd
 i<>.\src\mem_stage.vhd
 i<>.\src\alu.vhd
 i<>.\src\wb_stage.vhd
+i<>.\src\instruction_memory.vhd
+i<>.\src\controller.vhd
+i<>.\src\register_file.vhd
+i<>.\src\if_stage.vhd
+i<>.\src\id_stage.vhd
+i<>.\src\CAP23.vhd
+i<>.\src\mid_register.vhd
