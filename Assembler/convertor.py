@@ -31,26 +31,25 @@ instruction_to_type = {
 }
 
 register_to_binary = {
-    "d0": "0000",
-    "d1": "0001",
-    "d2": "0010",
-    "d3": "0011",
-    "d4": "0100",
-    "d5": "0101",
-    "d6": "0110",
-    "d7": "0111",
-    "d8": "1000",
-    "d9": "1001",
-    "d10": "1010",
-    "d11": "1011",
-    "BA": "1010"
+    "zero": "0000",
+    "d0": "0001",
+    "d1": "0010",
+    "d2": "0011",
+    "d3": "0100",
+    "a0": "0101",
+    "a1": "0110",
+    "a2": "0111",
+    "a3": "1000",
+    "sr": "1001",
+    "ba": "1010",
+    "pc": "1011"
 }
 
 def assembly_to_machine_code(assembly_line):
     print(assembly_line)
+    assembly_line = assembly_line.lower()
     result = ""
     instruction, register_and_data = assembly_line.split(" ", 1)
-    instruction = instruction.lower()
     register_and_data = [x.strip() for x in register_and_data.strip().split(",")]
     if instruction == "add" and len(register_and_data) == 2 and register_and_data[1].isdigit():
         instruction = "addm"

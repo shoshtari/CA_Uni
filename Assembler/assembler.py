@@ -1,5 +1,5 @@
 import sys
-from assembly_to_machine_code import assembly_to_machine_code
+from convertor import assembly_to_machine_code
 
 def write_list_to_file(li, file_name):
     pass
