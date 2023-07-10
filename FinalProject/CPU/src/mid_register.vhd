@@ -19,7 +19,7 @@ END mid_reg;
 
 ARCHITECTURE gate_level OF mid_reg IS
 
-SIGNAL master : std_logic_vector(size - 1 downto 0);
+SIGNAL master : std_logic_vector(size - 1 downto 0) := (others => '0');
 BEGIN
 	
     process(clk, reset)

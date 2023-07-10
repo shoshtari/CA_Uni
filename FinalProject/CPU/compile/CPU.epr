@@ -1,13 +1,2 @@
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd" VHDL CPU 1 0 0 -02
 "C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd" VHDL CPU 1 0 0 -02
-"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd" VHDL CPU 1 0 0 -02
 . . 0 0 0

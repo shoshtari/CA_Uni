@@ -20,12 +20,16 @@ ENTITY instruction_decode IS
 
 	-- outputs
 	rs : out std_logic_vector(15 downto 0);
-	rd : out std_logic_vector(15 downto 0);															 
-	extened_immediate : out std_logic_vector(15 downto 0);
-	address : out std_logic_vector(11 downto 0);
+	rd : out std_logic_vector(15 downto 0);
+	rd_address : out std_logic_vector(3 downto 0);
 	
+	extended_immediate : out std_logic_vector(15 downto 0);
+
 	write_back : out std_logic;
 	mem_write : out std_logic;
+	is_addm : out std_logic;
+	status_write : out std_logic;
+	alu_src : out std_logic;
 	alu_op : out std_logic_vector(1 downto 0)			  
 );
 
@@ -40,11 +44,14 @@ COMPONENT controller IS
 
 	write_back : OUT STD_LOGIC;
 	mem_write : OUT STD_LOGIC;
-	alu_op : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
-	
+	is_addm : out std_logic;
+	status_write : OUT std_logic;
+	alu_op : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+	alu_src : OUt std_logic
 );
 
 END COMPONENT;
+
 
 component register_file IS
 	PORT(
@@ -70,9 +77,10 @@ END component;
 
 
 
-SIGNAL op : STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL rd_address : std_logic_vector(3 downto 0);
+SIGNAL op : STD_LOGIC_VECTOR(3 DOWNTO 0);		   
 SIGNAL rs_address : std_logic_vector(3 downto 0);
+SIGNAL rd_address_in : std_logic_vector(3 downto 0);
+
 SIGNAL immediate : std_logic_vector(7 downto 0);
 
 BEGIN
@@ -80,21 +88,26 @@ BEGIN
 	op <= instruction(15 downto 12);
 	
 	-- if r format (rd is for i format to)
-	rd_address <= instruction(11 downto 8);
+	rd_address_in <= instruction(11 downto 8);
 	rs_address <= instruction(7 downto 4);
 	
 	c : controller
 	port map(
 	op => op,
+	
 	write_back => write_back,
 	mem_write => mem_write,
-	alu_op => alu_op
+	is_addm => is_addm,
+	status_write => status_write,
+	alu_op => alu_op,
+	alu_src => alu_src
+	
 	);
 	
 	r : register_file
 	port map(
 	
-	read_reg1 => rd_address,   
+	read_reg1 => rd_address_in,   
 	read_reg2 => rs_address, 
 	
 	write_reg1 => write_reg1,
@@ -110,7 +123,8 @@ BEGIN
 	
     data_out1 => rd,
 	data_out2 => rs
-	);
+	);	   
+	rd_address <= rd_address_in;
 	
 	
 
