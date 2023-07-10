@@ -1,0 +1,91 @@
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Error: COMP96_0033: CAP23.vhd : (223, 2): Missing actual.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Error: COMP96_0724: CAP23.vhd : (222, 40): ',' or ')' expected.
+# Error: COMP96_0015: CAP23.vhd : (223, 2): ';' expected.
+# Error: COMP96_0019: CAP23.vhd : (224, 2): Keyword 'end' expected.
+# Error: COMP96_0016: CAP23.vhd : (224, 3): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Error: COMP96_0664: CAP23.vhd : (226, 18): Value 27 out of range 23 downto 0.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work CPU -2002  $dsn/src/CAP23.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Design: 12:40 PM, Monday, July 10, 2023
+# Design: Opening design "C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\CPU.adf"
+# Design: 12:41 PM, Monday, July 10, 2023
+# Design: Opening design "C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\CPU.adf"
+acom -O3 -e 100 -work CPU -2002  $dsn/src/data_memory.vhd $dsn/src/exec_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/alu.vhd $dsn/src/adder.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/register_file.vhd $dsn/src/if_stage.vhd $dsn/src/id_stage.vhd $dsn/src/CAP23.vhd $dsn/src/mid_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

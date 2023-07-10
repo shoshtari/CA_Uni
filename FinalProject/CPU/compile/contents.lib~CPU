@@ -1,4 +1,4 @@
-64
+65
 ~E 1 "../src/adder.vhd" 4 Adder16
 ~A 1 "../src/adder.vhd" 13 adder_struc
 ~E 1 "../src/alu.vhd" 8 alu
