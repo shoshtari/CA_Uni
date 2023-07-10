@@ -30,7 +30,8 @@ ENTITY instruction_decode IS
 	is_addm : out std_logic;
 	status_write : out std_logic;
 	alu_src : out std_logic;
-	alu_op : out std_logic_vector(1 downto 0)			  
+	alu_op : out std_logic_vector(1 downto 0);
+	is_lw : out std_logic
 );
 
 END instruction_decode;
@@ -91,6 +92,7 @@ BEGIN
 	rd_address_in <= instruction(11 downto 8);
 	rs_address <= instruction(7 downto 4);
 	
+	is_lw <= not op(3) and op(2) and op(1) and op(0);
 	c : controller
 	port map(
 	op => op,

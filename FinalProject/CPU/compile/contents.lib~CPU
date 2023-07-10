@@ -1,4 +1,4 @@
-65
+83
 ~E 1 "../src/adder.vhd" 4 Adder16
 ~A 1 "../src/adder.vhd" 13 adder_struc
 ~E 1 "../src/alu.vhd" 8 alu
@@ -12,7 +12,7 @@
 ~E 1 "../src/exec_stage.vhd" 7 exec_stage
 ~A 1 "../src/exec_stage.vhd" 19 exec_struc
 ~E 1 "../src/id_stage.vhd" 5 instruction_decode
-~A 1 "../src/id_stage.vhd" 38 gate_level
+~A 1 "../src/id_stage.vhd" 39 gate_level
 ~E 1 "../src/if_stage.vhd" 5 instruction_fetch
 ~A 1 "../src/if_stage.vhd" 24 gate_level
 ~E 1 "../src/instruction_memory.vhd" 5 instruction_memory

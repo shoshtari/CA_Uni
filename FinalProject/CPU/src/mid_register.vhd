@@ -9,9 +9,9 @@ ENTITY mid_reg IS
 	
 	PORT(
 	input : IN std_logic_vector(size - 1 downto 0);							  
-	reset : IN STD_LOGIC; -- async. clear.
+	reset : IN STD_LOGIC; -- async clear.
 	
-    clk : IN STD_LOGIC; -- clock.
+    clk : IN STD_LOGIC; 
 	
     output   : OUT STD_LOGIC_VECTOR(size - 1 DOWNTO 0)
 );

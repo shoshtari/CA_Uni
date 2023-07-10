@@ -82,6 +82,7 @@ component instruction_decode IS
 	write_back : out std_logic;
 	mem_write : out std_logic;
 	is_addm : out std_logic;
+	is_lw : out std_logic;
 	status_write : out std_logic;
 	alu_src : out std_logic;
 	alu_op : out std_logic_vector(1 downto 0)			  
@@ -101,6 +102,24 @@ component exec_stage is
 		);
 end component;
 
+
+component mem_stage is
+	port (	
+	-- data input
+	exec_res : in std_logic_vector(15 downto 0);
+	exec_status : in std_logic_vector(3 downto 0);
+	D2 : in std_logic_vector(15 downto 0);
+	-- control input
+	mem_write : in std_logic;
+	is_lw : in std_logic;
+	is_addm : in std_logic;
+	clk : in std_logic;
+	-- data output		   
+	result : out std_logic_vector(15 downto 0);
+	status : out std_logic_vector(3 downto 0)
+		);
+end component;
+
 SIGNAL pc_set : std_logic_vector(15 downto 0);
 SIGNAL pc_get : std_logic_vector(15 downto 0);
 
@@ -108,16 +127,23 @@ SIGNAL pc_get : std_logic_vector(15 downto 0);
 SIGNAL instruction_get : std_logic_vector(15 downto 0);
 SIGNAL instruction_set : std_logic_vector(15 downto 0);
 
--- rd addresss,	rs,	rd,	immediate,	wb,	mw,	aluop,	alusrc,	is_addm,	status write
--- 4			16,	16,	16,			1,	1,	2,		1,		1,			1
-SIGNAL id_to_exec_get: std_logic_vector(58 downto 0);
-SIGNAL id_to_exec_set: std_logic_vector(58 downto 0);
+-- rd addresss,	rs,	rd,	immediate,	wb,	mw,	aluop,	alusrc,	is_addm,	status write, is lw	
+-- 4			16,	16,	16,			1,	1,	2,		1,		1,			1,				1
+SIGNAL id_to_exec_get: std_logic_vector(59 downto 0);
+SIGNAL id_to_exec_set: std_logic_vector(59 downto 0);
 
--- rd address,	write back,	mem write, is addm,	status write,	alu result,	status
--- 4,			1,			1,			1,		1,				16,			4
-SIGNAL exec_to_mem_get: std_logic_vector(27 downto 0);
-SIGNAL exec_to_mem_set: std_logic_vector(27 downto 0);
+-- rd address,	rs,	write back,	mem write, is addm,	status write,	is lw,	alu result,	status
+-- 4,			16,	1,			1,			1,		1,				1,		16,			4
+SIGNAL exec_to_mem_get: std_logic_vector(44 downto 0);
+SIGNAL exec_to_mem_set: std_logic_vector(44 downto 0);
 
+
+-- rd address,	write back,	status write,	write data,	status
+-- 4			1			1				16			4
+SIGNAL mem_to_wb_get: std_logic_vector(25 downto 0);
+SIGNAL mem_to_wb_set: std_logic_vector(25 downto 0);
+
+SIGNAL static_data_to_write : std_logic_vector(15 downto 0);
 
 BEGIN
 	-- defining registers
@@ -146,7 +172,7 @@ BEGIN
 	-- id to exec (ID/EXEC)
 	id_to_exec : mid_reg
 	generic map(
-	size =>	59
+	size =>	60
 	)
 	port map(
 	input => id_to_exec_set,
@@ -157,7 +183,7 @@ BEGIN
 	-- EXE/MEM
 	exec_to_mem : mid_reg
 	generic map(
-	size =>	28
+	size =>	29
 	)
 	port map(
 	input => exec_to_mem_set,
@@ -165,6 +191,18 @@ BEGIN
 	clk => clk,
 	output => exec_to_mem_get
 	); 
+	-- MEM/WB
+	mem_to_wb : mid_reg
+	generic map(
+	size =>	26
+	)
+	port map(
+	input => mem_to_wb_set,
+	reset => reset,
+	clk => clk,
+	output => mem_to_wb_get
+	); 
+	
 	
 	
 	
@@ -186,27 +224,28 @@ BEGIN
 	instruction	=> instruction_get,
 	clk => clk,
 	
-	write_reg1 => (others => '0'),
-	write_reg2 => (others => '0'),
+	write_reg1 => mem_to_wb_get(25 downto 22),
+	write_reg2 => "1001",
 	
-	reg_write1 => '0',
-	reg_write2 => '0',
+	reg_write1 => mem_to_wb_get(21),
+	reg_write2 => mem_to_wb_get(20),
 	
-	write_data1 => (others => '0'),
-	write_data2 => (others => '0'),
+	write_data1 => mem_to_wb_get(19 downto 4),
+	write_data2 => static_data_to_write,
 	
-	rd_address => id_to_exec_set(58 downto 55),
-	rs => id_to_exec_set(54 downto 39),
-	rd => id_to_exec_set(38 downto 23),
-	extended_immediate => id_to_exec_set(22 downto 7),
-	write_back => id_to_exec_set(6),
-	mem_write => id_to_exec_set(5),
+	rd_address => id_to_exec_set(59 downto 56),
+	rs => id_to_exec_set(55 downto 40),
+	rd => id_to_exec_set(39 downto 24),
+	extended_immediate => id_to_exec_set(23 downto 8),
+	write_back => id_to_exec_set(7),
+	mem_write => id_to_exec_set(6),
 	
-	alu_op => id_to_exec_set(4 downto 3),
-	alu_src => id_to_exec_set(2),
+	alu_op => id_to_exec_set(5 downto 4),
+	alu_src => id_to_exec_set(3),
 	
-	is_addm => id_to_exec_set(1),
-	status_write => id_to_exec_set(0)
+	is_addm => id_to_exec_set(2),
+	status_write => id_to_exec_set(1),
+	is_lw => id_to_exec_set(0)
 	
 	);
 	
@@ -214,25 +253,51 @@ BEGIN
 	-- exec
 	exec_stage_comp : exec_stage
 	port map(
-	D1 => id_to_exec_get(54 downto 39),
-	D2 => id_to_exec_get(38 downto 23),
-	Immed => id_to_exec_get(22 downto 7),
-	AluOP => id_to_exec_get(6 downto 5),
-	AluSrc => id_to_exec_get(4),
+	D1 => id_to_exec_get(55 downto 40),
+	D2 => id_to_exec_get(39 downto 24),
+	Immed => id_to_exec_get(23 downto 8),
+	
+	AluOP => id_to_exec_get(5 downto 4),
+	AluSrc => id_to_exec_get(3),
 	result => exec_to_mem_set(19 downto 4),
 	status => exec_to_mem_set(3 downto 0)
 	);
 	
-	exec_to_mem_set(27 downto 24) <= id_to_exec_get( 58 downto 55);
+	exec_to_mem_set(44 downto 41) <= id_to_exec_get( 59 downto 56); -- rs address
+	exec_to_mem_set(40 downto 25) <= id_to_exec_get(39 downto 24); -- rs
+	exec_to_mem_set(24) <= id_to_exec_get(7); -- wb 
+	exec_to_mem_set(23) <= id_to_exec_get(6); -- mw
+	exec_to_mem_set(22) <= id_to_exec_get(2); -- is addm
+	exec_to_mem_set(21) <= id_to_exec_get(1); -- status write 
+	exec_to_mem_set(20) <= id_to_exec_get(0); -- is lw
+	
+	-- mem
+	mem_stage_comp : mem_stage
+	port map(
+	exec_res => exec_to_mem_get(19 downto 4),
+	exec_status => exec_to_mem_get(3 downto 0),
+	D2 => exec_to_mem_get(40 downto 25),
+	mem_write => exec_to_mem_get(23),
+	is_lw => exec_to_mem_get(20),
+	is_addm => exec_to_mem_get(22),
+	clk => clk,
+	
+	result => mem_to_wb_set(19 downto 4), -- result
+	status => mem_to_wb_set(3 downto 0) -- status 
+	);
+	
+	exec_to_mem_set(28 downto 25) <= id_to_exec_get( 59 downto 56);
+	exec_to_mem_set(24) <= id_to_exec_get(7);
 	exec_to_mem_set(23) <= id_to_exec_get(6);
-	exec_to_mem_set(22) <= id_to_exec_get(5);
-	exec_to_mem_set(21) <= id_to_exec_get(1);
+	exec_to_mem_set(22) <= id_to_exec_get(2);
+	exec_to_mem_set(21) <= id_to_exec_get(1); 
 	exec_to_mem_set(20) <= id_to_exec_get(0);
 	
+	mem_to_wb_set(25 downto 22) <= exec_to_mem_get(44 downto 41); -- rd address
+	mem_to_wb_set(21) <= exec_to_mem_get(24); -- wb
+	mem_to_wb_set(20) <= exec_to_mem_get(21); -- status write
 	
 	
-	
-	
-	
+	static_data_to_write <= "000000000000" & mem_to_wb_get(3 downto 0);
 	
 END gate_level;
