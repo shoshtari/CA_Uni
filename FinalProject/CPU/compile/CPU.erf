@@ -2,4 +2,4 @@ MESSAGE "File: D:/Project/CA/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.
 MESSAGE "Compile Entity "cap23_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_cap23"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 

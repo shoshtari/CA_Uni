@@ -1,4 +1,4 @@
-Active-HDL 13.0.375.8320 2023-07-10 23:10:45
+Active-HDL 13.0.375.8320 2023-07-10 23:27:11
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(cap23_tb)
@@ -41,7 +41,3 @@ cpu                                  | None
 ieee                                 | Standard IEEE packages library
 std                                  | Standard VHDL library
 --------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
-
