@@ -8,14 +8,19 @@ ENTITY cap23 IS
 	clk : IN std_logic;
 	reset : IN std_logic;
 	
-	set_pc : IN std_logic;
-	set_pc_value : IN std_logic_vector(15 downto 0);
-	
 	-- instruction memory
 	im_write_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
 	im_write_data : IN std_logic_vector(15 downto 0);
 
-    im_reg_write : IN std_logic	 
+    im_reg_write : IN std_logic;
+	
+	pc_output : OUT std_logic_vector(15 downto 0);
+	instruction_output: OUT std_logic_vector(15 downto 0);
+	id_to_exe_output : OUT std_logic_vector(59 downto 0);
+	exec_to_mem_output : OUT std_logic_vector(44 downto 0);
+	mem_to_wb_output : OUT std_logic_vector(25 downto 0)
+	
+	
 );
 
 END cap23;
@@ -64,6 +69,7 @@ component instruction_decode IS
 	clk : IN STD_LOGIC; -- clock.
 	pc_in : IN std_logic_vector(15 downto 0);
 	
+	reg_read : IN std_logic;
 	-- register file write pins exported
 	write_reg1 : IN std_logic_vector(3 downto 0);
 	write_reg2 : IN std_logic_vector(3 downto 0);
@@ -146,6 +152,7 @@ SIGNAL mem_to_wb_get: std_logic_vector(25 downto 0);
 SIGNAL mem_to_wb_set: std_logic_vector(25 downto 0);
 
 SIGNAL static_data_to_write : std_logic_vector(15 downto 0);
+SIGNAL reg_read : std_logic;
 
 BEGIN			  																	  
 	-- defining registers
@@ -220,6 +227,7 @@ BEGIN
 	-- id
 	id_stage : instruction_decode
 	port map(
+	reg_read => reg_read,
 	instruction	=> instruction_get,
 	clk => clk,
 	pc_in => pc_get,
@@ -300,5 +308,13 @@ BEGIN
 	
 	
 	static_data_to_write <= "000000000000" & mem_to_wb_get(3 downto 0);
+	reg_read <= not reset;
+	pc_output <= (others => '0');
+	--pc_output <= pc_get;
+	
+	instruction_output <= instruction_get;
+	id_to_exe_output <= id_to_exec_get;
+	exec_to_mem_output <= exec_to_mem_get;
+	mem_to_wb_output <= mem_to_wb_get;
 	
 END gate_level;

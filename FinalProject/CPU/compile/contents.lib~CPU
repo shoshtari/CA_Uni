@@ -1,10 +1,10 @@
-161
+184
 ~E 1 "../src/adder.vhd" 4 Adder16
 ~A 1 "../src/adder.vhd" 13 adder_struc
 ~E 1 "../src/alu.vhd" 8 alu
 ~A 1 "../src/alu.vhd" 20 alu_struc
 ~E 1 "../src/CAP23.vhd" 5 cap23
-~A 1 "../src/CAP23.vhd" 23 gate_level
+~A 1 "../src/CAP23.vhd" 28 gate_level
 ~E 1 "../src/TestBench/cap23_TB.vhd" 10 cap23_tb
 ~A 1 "../src/TestBench/cap23_TB.vhd" 13 TB_ARCHITECTURE
 ~E 1 "../src/controller.vhd" 5 controller
@@ -14,7 +14,7 @@
 ~E 1 "../src/exec_stage.vhd" 7 exec_stage
 ~A 1 "../src/exec_stage.vhd" 19 exec_struc
 ~E 1 "../src/id_stage.vhd" 5 instruction_decode
-~A 1 "../src/id_stage.vhd" 42 gate_level
+~A 1 "../src/id_stage.vhd" 43 gate_level
 ~E 1 "../src/if_stage.vhd" 5 instruction_fetch
 ~A 1 "../src/if_stage.vhd" 24 gate_level
 ~E 1 "../src/instruction_memory.vhd" 5 instruction_memory
@@ -24,5 +24,5 @@
 ~E 1 "../src/mid_register.vhd" 4 mid_reg
 ~A 1 "../src/mid_register.vhd" 20 gate_level
 ~E 1 "../src/register_file.vhd" 5 register_file
-~A 1 "../src/register_file.vhd" 27 gate_level
-~C 1 "../src/TestBench/cap23_TB.vhd" 92 testbench_for_cap23
+~A 1 "../src/register_file.vhd" 29 gate_level
+~C 1 "../src/TestBench/cap23_TB.vhd" 106 testbench_for_cap23

@@ -16,21 +16,32 @@ architecture TB_ARCHITECTURE of cap23_tb is
 	port(
 		clk : in STD_LOGIC;
 		reset : in STD_LOGIC;
-		set_pc : in STD_LOGIC;
-		set_pc_value : in STD_LOGIC_VECTOR(15 downto 0);
 		im_write_address : in STD_LOGIC_VECTOR(9 downto 0);
 		im_write_data : in STD_LOGIC_VECTOR(15 downto 0);
-		im_reg_write : in STD_LOGIC );
+		
+		im_reg_write : in STD_LOGIC;
+		
+		pc_output : OUT std_logic_vector(15 downto 0);
+		instruction_output: OUT std_logic_vector(15 downto 0);
+		id_to_exe_output : OUT std_logic_vector(59 downto 0);
+		exec_to_mem_output : OUT std_logic_vector(44 downto 0);
+		mem_to_wb_output : OUT std_logic_vector(25 downto 0)
+		
+		);
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
 	signal clk : STD_LOGIC;
 	signal reset : STD_LOGIC;
-	signal set_pc : STD_LOGIC;
-	signal set_pc_value : STD_LOGIC_VECTOR(15 downto 0);
 	signal im_write_address : STD_LOGIC_VECTOR(9 downto 0);
 	signal im_write_data : STD_LOGIC_VECTOR(15 downto 0);
 	signal im_reg_write : STD_LOGIC;
+	
+	signal pc_output : std_logic_vector(15 downto 0);
+	signal instruction_output: std_logic_vector(15 downto 0);
+	signal id_to_exe_output : std_logic_vector(59 downto 0);
+	signal exec_to_mem_output : std_logic_vector(44 downto 0);
+	signal mem_to_wb_output :  std_logic_vector(25 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
 
 	-- Add your code here ...  
@@ -44,11 +55,15 @@ begin
 		port map (
 			clk => clk,
 			reset => reset,
-			set_pc => set_pc,
-			set_pc_value => set_pc_value,
+
 			im_write_address => im_write_address,
 			im_write_data => im_write_data,
-			im_reg_write => im_reg_write
+			im_reg_write => im_reg_write,
+			pc_output => pc_output,
+			instruction_output => instruction_output,
+			id_to_exe_output => id_to_exe_output,
+			exec_to_mem_output => exec_to_mem_output,
+			mem_to_wb_output => mem_to_wb_output
 		);					
 		
 process
@@ -67,7 +82,6 @@ begin
 	wait for 100ns;
 	clk <= '0'; 
 	im_reg_write <= '1'; 
-	set_pc <= '0';
 --	im_write_address <= "0000000010";
 --	for i in 0 to 100000 loop
 --    	exit when endfile(file_handler);

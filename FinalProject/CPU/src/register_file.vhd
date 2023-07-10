@@ -4,6 +4,8 @@ use ieee.numeric_std.all;
 
 ENTITY register_file IS
 	PORT(
+	reg_read : IN std_logic;
+	
 	read_reg1   : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	read_reg2   : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	
@@ -50,12 +52,13 @@ BEGIN
 			end if;
 			
 			-- read data...
-			
-			bit_address_read1 <= to_integer(unsigned(read_reg1));
-			data_out1 <= data(bit_address_read1);
-			
-			bit_address_read2 <= to_integer(unsigned(read_reg2));
-			data_out2 <= data(bit_address_read2);
+			if reg_read = '1' then
+				bit_address_read1 <= to_integer(unsigned(read_reg1));
+				data_out1 <= data(bit_address_read1);
+				
+				bit_address_read2 <= to_integer(unsigned(read_reg2));
+				data_out2 <= data(bit_address_read2);
+			end if;
 		end if;
 	end process;
     

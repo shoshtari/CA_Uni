@@ -20,6 +20,7 @@ ENTITY instruction_decode IS
 	write_data1 : IN std_logic_vector(15 downto 0);
 	write_data2 : IN std_logic_vector(15 downto 0);
 
+	reg_read : IN std_logic;
 	-- outputs
 	rs : out std_logic_vector(15 downto 0);
 	rd : out std_logic_vector(15 downto 0);
@@ -59,6 +60,7 @@ END COMPONENT;
 
 component register_file IS
 	PORT(
+	reg_read : IN std_logic;
 	read_reg1   : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	read_reg2   : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	
@@ -107,6 +109,7 @@ BEGIN
 	
 	r : register_file
 	port map(
+	reg_read => reg_read,
 	
 	read_reg1 => rd_address_in,   
 	read_reg2 => rs_address, 
