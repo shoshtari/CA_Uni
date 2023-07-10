@@ -10,3 +10,4 @@
 .\src\mem_stage.vhd
 .\src\exec_stage.vhd
 .\src\CAP23.vhd
+.\src\TestBench\cap23_TB.vhd

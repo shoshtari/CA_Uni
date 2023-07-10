@@ -147,7 +147,7 @@ SIGNAL mem_to_wb_set: std_logic_vector(25 downto 0);
 
 SIGNAL static_data_to_write : std_logic_vector(15 downto 0);
 
-BEGIN
+BEGIN			  																	  
 	-- defining registers
 	-- pc
 	pc : mid_reg
@@ -185,7 +185,7 @@ BEGIN
 	-- EXE/MEM
 	exec_to_mem : mid_reg
 	generic map(
-	size =>	29
+	size =>	45
 	)
 	port map(
 	input => exec_to_mem_set,

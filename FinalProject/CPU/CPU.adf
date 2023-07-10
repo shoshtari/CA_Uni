@@ -3,32 +3,25 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
-
 [Configurations]
 compile=cpu
-
 [Library]
 CPU=.\CPU\CPU.lib
-
 [$LibMap$]
 CPU=.
 Active_lib=
-
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-
 [HierarchyViewer]
-HierarchyInformation=cap23|gate_level|0 
+HierarchyInformation=cap23|gate_level|0
 ShowHide=ShowTopLevel
 Selected=
-
 [SpecTracer]
 WindowVisible=0
-
 [Files]
 /register_file.vhd=-1
 /mid_register.vhd=-1
@@ -42,7 +35,8 @@ WindowVisible=0
 /mem_stage.vhd=-1
 /exec_stage.vhd=-1
 /CAP23.vhd=-1
-
+TestBench/cap23_TB.vhd=-1
+TestBench/cap23_TB_runtest.do=-1
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
 .\src\mid_register.vhd=VHDL Source Code
@@ -56,4 +50,7 @@ WindowVisible=0
 .\src\mem_stage.vhd=VHDL Source Code
 .\src\exec_stage.vhd=VHDL Source Code
 .\src\CAP23.vhd=VHDL Source Code
-
+.\src\TestBench\cap23_TB.vhd=VHDL Test Bench
+.\src\TestBench\cap23_TB_runtest.do=Macro
+[Groups]
+TestBench=1

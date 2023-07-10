@@ -26,7 +26,8 @@ END register_file;
 
 ARCHITECTURE gate_level OF register_file IS
 
-SIGNAL data : STD_logic_vector(222 downto 0); -- 14 register * 16 bit 
+type data_array is array (0 to 13) of std_logic_vector(15 downto 0);	 -- 14 register * 16 bit    
+signal data : data_array;
 
 SIGNAL bit_address_write1: integer;
 SIGNAL bit_address_read1: integer;
@@ -35,30 +36,26 @@ SIGNAL bit_address_read2: integer;
 
 BEGIN
 	
-	data(222 downto 219) <= (others => '0');
-	
 	process(clk)
 	begin	   
-		if rising_edge(clk) then
+		if falling_edge(clk) then
 			if reg_write1 = '1' then
-				bit_address_write1 <= to_integer(unsigned(write_reg1 & "1111")); 
-				
-				data(bit_address_write1 downto bit_address_write1 - 15) <= write_data1;
+				bit_address_write1 <= to_integer(unsigned(write_reg1)); 
+				data(bit_address_write1) <= write_data1;
 			end if;
 			
 			if reg_write2 = '1' then
-				bit_address_write2 <= to_integer(unsigned(write_reg2 & "1111")); 
-				
-				data(bit_address_write2 downto bit_address_write2 - 15) <= write_data2;
+				bit_address_write2 <= to_integer(unsigned(write_reg2)); 
+				data(bit_address_write2) <= write_data2;
 			end if;
 			
 			-- read data...
 			
-			bit_address_read1 <= to_integer(unsigned(read_reg1 & "1111"));
-			data_out1 <= data(bit_address_read1 downto bit_address_read1 - 15);
+			bit_address_read1 <= to_integer(unsigned(read_reg1));
+			data_out1 <= data(bit_address_read1);
 			
-			bit_address_read2 <= to_integer(unsigned(read_reg2 & "1111"));
-			data_out2 <= data(bit_address_read2 downto bit_address_read2 - 15);
+			bit_address_read2 <= to_integer(unsigned(read_reg2));
+			data_out2 <= data(bit_address_read2);
 		end if;
 	end process;
     
