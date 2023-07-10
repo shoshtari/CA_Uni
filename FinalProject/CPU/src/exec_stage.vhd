@@ -16,8 +16,6 @@ entity exec_stage is
 		);
 end exec_stage;					
 
-
-
 architecture exec_struc of exec_stage is   
 component alu
 	port (
