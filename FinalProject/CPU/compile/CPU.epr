@@ -1,2 +1,15 @@
-"D:/Project/CA/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd" VHDL cpu 1 0 0 -02
+"C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd" VHDL cpu 1 0 0 -02
 . . 0 0 0

@@ -37,6 +37,8 @@ WindowVisible=0
 /CAP23.vhd=-1
 TestBench/cap23_TB.vhd=-1
 TestBench/cap23_TB_runtest.do=-1
+TestBench/register_file_TB.vhd=-1
+TestBench/register_file_TB_runtest.do=-1
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
 .\src\mid_register.vhd=VHDL Source Code
@@ -52,5 +54,7 @@ TestBench/cap23_TB_runtest.do=-1
 .\src\CAP23.vhd=VHDL Source Code
 .\src\TestBench\cap23_TB.vhd=VHDL Test Bench
 .\src\TestBench\cap23_TB_runtest.do=Macro
+.\src\TestBench\register_file_TB.vhd=VHDL Test Bench
+.\src\TestBench\register_file_TB_runtest.do=Macro
 [Groups]
 TestBench=1

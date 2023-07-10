@@ -1,12 +1,13 @@
+acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-acom -dbg -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
-# File: D:/Project/CA/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
-# Compile Entity "cap23_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
-# Compile Configuration "TESTBENCH_FOR_cap23"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
@@ -23,187 +24,29 @@ asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9593 kB (elbread=427 elab2=9011 kernel=155 sdf=0)
-# KERNEL: ASDB file was created in location D:\Project\CA\ca_project\FinalProject\CPU\src\wave.asdb
-#  11:24 PM, Monday, July 10, 2023
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4998 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:52 AM, Tuesday, July 11, 2023
 #  Simulation has been initialized
 run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (46): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
 # KERNEL: stopped at time: 100 ns
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9593 kB (elbread=427 elab2=9011 kernel=155 sdf=0)
-# KERNEL: ASDB file was created in location D:\Project\CA\ca_project\FinalProject\CPU\src\wave.asdb
-#  11:24 PM, Monday, July 10, 2023
-#  Simulation has been initialized
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-run 100 ns
-# KERNEL: stopped at time: 800 ns
-run 100 ns
-# KERNEL: stopped at time: 900 ns
-run 100 ns
-# KERNEL: stopped at time: 1 us
-run 100 ns
-# KERNEL: stopped at time: 1100 ns
-run 100 ns
-# KERNEL: stopped at time: 1200 ns
-run 100 ns
-# KERNEL: stopped at time: 1300 ns
-run 100 ns
-# KERNEL: stopped at time: 1400 ns
-run 100 ns
-# KERNEL: stopped at time: 1500 ns
-run 100 ns
-# KERNEL: stopped at time: 1600 ns
-run 100 ns
-# KERNEL: stopped at time: 1700 ns
-run 100 ns
-# KERNEL: stopped at time: 1800 ns
-run 100 ns
-# KERNEL: stopped at time: 1900 ns
-run 100 ns
-# KERNEL: stopped at time: 2 us
-run 100 ns
-# KERNEL: stopped at time: 2100 ns
-run 100 ns
-# KERNEL: stopped at time: 2200 ns
-run 100 ns
-# KERNEL: stopped at time: 2300 ns
-run 100 ns
-# KERNEL: stopped at time: 2400 ns
-run 100 ns
-# KERNEL: stopped at time: 2500 ns
-run 100 ns
-# KERNEL: stopped at time: 2600 ns
-run 100 ns
-# KERNEL: stopped at time: 2700 ns
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2800 ns
-run 100 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2900 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/id_stage/r,  Process: line__41.
-# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (57): Index -2147483648 out of range (0 to 13).
-# KERNEL: Time: 2900 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/id_stage/r,  Process: line__41.
-# KERNEL: stopped at time: 2900 ns
 # VSIM: Error: Fatal error occurred during simulation.
 endsim
 # VSIM: Simulation has finished.
-asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
+acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
-acom -dbg -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
-# File: D:/Project/CA/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
-# Compile Entity "cap23_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
-# Compile Configuration "TESTBENCH_FOR_cap23"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
 # ELAB2: Elaboration final pass...
@@ -216,9 +59,1173 @@ acom -dbg -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9593 kB (elbread=427 elab2=9011 kernel=155 sdf=0)
-# KERNEL: ASDB file was created in location D:\Project\CA\ca_project\FinalProject\CPU\src\wave.asdb
-#  11:27 PM, Monday, July 10, 2023
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4998 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:52 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (46): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: stopped at time: 100 ns
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4998 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:54 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:54 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (46): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Error: COMP96_0086: TestBench/register_file_TB.vhd : (76, 10): String expected.
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Error: COMP96_0078: TestBench/register_file_TB.vhd : (76, 10): Unknown identifier "to_string".
+# Error: COMP96_0133: TestBench/register_file_TB.vhd : (76, 10): Cannot find object declaration.
+# Error: COMP96_0289: TestBench/register_file_TB.vhd : (76, 10): Prefix of index must be an array.
+# Error: COMP96_0086: TestBench/register_file_TB.vhd : (76, 10): String expected.
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:56 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# EXECUTION:: NOTE   : Entity: data_in=0
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+# Design: Design cpu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Design: Design cpu already active.
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:57 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# EXECUTION:: NOTE   : Entity: data_in=0
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (46): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+# Design: Design cpu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Design: Design cpu already active.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:58 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# EXECUTION:: NOTE   : Entity: data_in=1
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (46): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  12:59 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# EXECUTION:: NOTE   : Entity: data_in=1
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# EXECUTION:: NOTE   : Entity: address =-2147483648
+# EXECUTION:: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (47): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  1:00 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# EXECUTION:: NOTE   : Entity: data_in=1
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# EXECUTION:: NOTE   : Entity: address =-2147483648
+# EXECUTION:: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (47): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  1:00 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# EXECUTION:: NOTE   : Entity: data_in=1
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# EXECUTION:: NOTE   : Entity: address =-2147483648
+# EXECUTION:: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (47): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+endsim
+# VSIM: Simulation has finished.
+# Design: Design cpu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Design: Design cpu already active.
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  1:03 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# EXECUTION:: NOTE   : Entity: data_in=1
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# EXECUTION:: NOTE   : Entity: address =-2147483648
+# EXECUTION:: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (60): Index -2147483648 out of range (0 to 13).
+# KERNEL: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: Stopped at time 110 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+register_file_tb register_file_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  1:05 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# EXECUTION:: NOTE   : Entity: data_in=1
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /register_file_tb,  Process: line__65.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# EXECUTION:: NOTE   : Entity: address =-2147483648
+# EXECUTION:: Time: 110 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# EXECUTION:: NOTE   : Entity: address =1
+# EXECUTION:: Time: 310 ns,  Iteration: 1,  Instance: /register_file_tb/UUT,  Process: line__41.
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 9551 kB (elbread=427 elab2=8979 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  1:06 AM, Tuesday, July 11, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 1300 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 2 us,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 2200 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 2600 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 2700 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 2700 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 2800 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 2900 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 2900 ns
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/register_file.vhd $dsn/src/mid_register.vhd $dsn/src/instruction_memory.vhd $dsn/src/controller.vhd $dsn/src/data_memory.vhd $dsn/src/adder.vhd $dsn/src/alu.vhd $dsn/src/id_stage.vhd $dsn/src/if_stage.vhd $dsn/src/mem_stage.vhd $dsn/src/exec_stage.vhd $dsn/src/CAP23.vhd $dsn/src/TestBench/cap23_TB.vhd $dsn/src/TestBench/register_file_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "gate_level" of Entity "register_file"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mid_register.vhd
+# Compile Entity "mid_reg"
+# Compile Architecture "gate_level" of Entity "mid_reg"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "gate_level" of Entity "instruction_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "dm_struc" of Entity "data_memory"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/adder.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "adder_struc" of Entity "Adder16"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_struc" of Entity "alu"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/id_stage.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "gate_level" of Entity "instruction_decode"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/if_stage.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "gate_level" of Entity "instruction_fetch"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/mem_stage.vhd
+# Compile Entity "mem_stage"
+# Compile Architecture "mem_struc" of Entity "mem_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/exec_stage.vhd
+# Compile Entity "exec_stage"
+# Compile Architecture "exec_struc" of Entity "exec_stage"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
+# Compile Entity "cap23_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
+# Compile Configuration "TESTBENCH_FOR_cap23"
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/register_file_TB.vhd
+# Compile Entity "register_file_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 9551 kB (elbread=427 elab2=8979 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
+#  1:14 AM, Tuesday, July 11, 2023
 #  Simulation has been initialized
 run 100 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -281,53 +1288,70 @@ run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 1300 ns
 run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 1400 ns
 run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 1500 ns
 run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 1600 ns
 run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 1700 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 1700 ns
 run 100 ns
 # KERNEL: stopped at time: 1800 ns
 run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 1900 ns
 run 100 ns
 # KERNEL: stopped at time: 2 us
 run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2100 ns
 run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 2200 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 2200 ns
 run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2300 ns
 run 100 ns
-# KERNEL: stopped at time: 2400 ns
-run 100 ns
-# KERNEL: stopped at time: 2500 ns
-run 100 ns
-# KERNEL: stopped at time: 2600 ns
-run 100 ns
-# KERNEL: stopped at time: 2700 ns
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2800 ns
-run 100 ns
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2900 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/id_stage/r,  Process: line__41.
-# RUNTIME: Fatal Error: RUNTIME_0047 register_file.vhd (57): Index -2147483648 out of range (0 to 13).
-# KERNEL: Time: 2900 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/id_stage/r,  Process: line__41.
-# KERNEL: stopped at time: 2900 ns
-# VSIM: Error: Fatal error occurred during simulation.
-run 100 ns
-run 100 ns
+# KERNEL: Time: 2400 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: stopped at time: 2400 ns
 endsim
 # VSIM: Simulation has finished.

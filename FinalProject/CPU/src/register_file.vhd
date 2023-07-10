@@ -31,33 +31,29 @@ ARCHITECTURE gate_level OF register_file IS
 type data_array is array (0 to 13) of std_logic_vector(15 downto 0);	 -- 14 register * 16 bit    
 signal data : data_array;
 
-SIGNAL bit_address_write1: integer;
-SIGNAL bit_address_read1: integer;
-SIGNAL bit_address_write2: integer;
-SIGNAL bit_address_read2: integer;
-
 BEGIN
 	
 	process(clk)
 	begin	   
 		if falling_edge(clk) then
 			if reg_write1 = '1' then
-				bit_address_write1 <= to_integer(unsigned(write_reg1)); 
-				data(bit_address_write1) <= write_data1;
+				data(to_integer(unsigned(write_reg1))) <= write_data1;
 			end if;
 			
 			if reg_write2 = '1' then
-				bit_address_write2 <= to_integer(unsigned(write_reg2)); 
-				data(bit_address_write2) <= write_data2;
+				-- bit_address_write2 <= ; 
+				data(to_integer(unsigned(write_reg2))) <= write_data2;
 			end if;
 			
 			-- read data...
-			if reg_read = '1' then
-				bit_address_read1 <= to_integer(unsigned(read_reg1));
-				data_out1 <= data(bit_address_read1);
-				
-				bit_address_read2 <= to_integer(unsigned(read_reg2));
-				data_out2 <= data(bit_address_read2);
+			if reg_read = '1' then				
+				data_out1 <= data(to_integer(unsigned(read_reg1)));
+				if to_integer(unsigned(read_reg2)) < 0 or to_integer(unsigned(read_reg2)) > 14 then
+					report "warn, reg overflow";
+					data_out2 <= data(0);
+				else 
+					data_out2 <= data(to_integer(unsigned(read_reg2)));
+				end if;
 			end if;
 		end if;
 	end process;

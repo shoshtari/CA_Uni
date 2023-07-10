@@ -23,16 +23,20 @@ signal data : data_array;
 
 BEGIN
 												 
-	process (clk)
+process (clk)
 variable index : integer;						  
 begin  	 
 	if falling_edge(clk) then
-	index := to_integer(unsigned(write_address));
-	if reg_write = '1' then	  
-		data(index) <= write_data;
+		index := to_integer(unsigned(write_address));
+		if reg_write = '1' then	  
+			data(index) <= write_data;
+		end if;
+
+
+		index := to_integer(unsigned(read_address));
+		data_out <= data(index);
 	end if;
-	data_out <= data(index);
-end if;		  
+	  
 end process;
     
 END gate_level;

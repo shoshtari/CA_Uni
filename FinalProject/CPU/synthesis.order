@@ -11,3 +11,4 @@ i<>.\src\id_stage.vhd
 i<>.\src\CAP23.vhd
 i<>.\src\mid_register.vhd
 i<>.\src\TestBench\cap23_TB.vhd
+i<>.\src\TestBench\register_file_TB.vhd

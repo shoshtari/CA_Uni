@@ -79,10 +79,11 @@ begin
 --	
 --	end if;	  
 	reset <= '1'; 
-	wait for 100ns;
-	clk <= '0'; 
+	clk <= '1'; 
 	im_reg_write <= '1'; 
 	im_write_address <= "0000000000";
+	
+	wait for 100ns;
 	for i in 0 to 100000 loop
     	exit when endfile(file_handler);
 		readline(file_handler, row);
@@ -99,6 +100,7 @@ begin
 	reset <= '0';
 	im_reg_write <= '0';
 	clk <='0';
+	
 	wait for 100ns;
 	clk <='1';
 	wait for 100ns;	

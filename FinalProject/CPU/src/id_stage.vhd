@@ -168,7 +168,7 @@ BEGIN
 			stall <= 1;
 			hazard_detected <= '1';
 		elsif op = "1110" and rd_register_file(0) = '0' then
-			pc_out <= std_logic_vector(unsigned(pc_in) + 2 + unsigned(immediate&'0'));
+			pc_out <= std_logic_vector(unsigned(pc_in) + 1 + unsigned(immediate));
 			stall <= 1;
 			hazard_detected <= '1';
 		else

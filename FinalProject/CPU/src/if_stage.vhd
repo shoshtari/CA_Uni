@@ -52,12 +52,13 @@ BEGIN
 	data_out => fetched_instruction
 	);							   
 	
-	process(fetched_instruction)
-	begin
-		if fetched_instruction(15 downto 12) = "1110" then
-			fetched_instruction(11 downto 8) <= "1001";
-		end if;
-		data <= fetched_instruction;
-	end process;
+	data <= fetched_instruction;
+--	process(fetched_instruction)
+--	begin
+--		if fetched_instruction(15 downto 12) = "1110" then
+--			fetched_instruction(11 downto 8) <= "1001";
+--		end if;
+--	end process;
+--	data <= fetched_instruction;
     
 END gate_level;
