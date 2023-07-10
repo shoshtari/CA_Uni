@@ -85,6 +85,14 @@ SIGNAL rd_address_in : std_logic_vector(3 downto 0);
 SIGNAL stall : integer := 0;
 
 SIGNAL immediate : std_logic_vector(7 downto 0);
+  
+SIGNAL wb_control : std_logic;
+SIGNAL mw_control : std_logic;
+SIGNAL sw_control : std_logic;
+
+SIGNAL hazard_detected : std_logic;	
+SIGNAL new_cycle : std_logic;
+SIGNAL rd_register_file : std_logic_vector(15 downto 0);
 
 BEGIN
 	
@@ -95,18 +103,7 @@ BEGIN
 	rs_address <= instruction(7 downto 4);
 	
 	is_lw <= not op(3) and op(2) and op(1) and op(0);
-	c : controller
-	port map(
-	op => op,
-	
-	write_back => write_back,
-	mem_write => mem_write,
-	is_addm => is_addm,
-	status_write => status_write,
-	alu_op => alu_op,
-	alu_src => alu_src
-	
-	);
+
 	
 	r : register_file
 	port map(
@@ -125,10 +122,59 @@ BEGIN
 
 	clk => clk,
 	
-    data_out1 => rd,
+    data_out1 => rd_register_file,
 	data_out2 => rs
-	);	   
+	);
+	rd <= rd_register_file;
 	rd_address <= rd_address_in;
+	
+	c : controller
+	port map(
+	op => op,
+	write_back => wb_control,
+	mem_write => mw_control,
+	is_addm => is_addm,
+	status_write => sw_control,
+	alu_op => alu_op,
+	alu_src => alu_src
+	);
+	
+	write_back <= wb_control and not hazard_detected;
+	mem_write <= mw_control and not hazard_detected;
+	status_write <= sw_control and not hazard_detected;
+	
+	-- pc_out <= std_logic_vector(unsigned(pc_in) + 4);
+	-- hazard detection
+	
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			if stall > 0 then 
+				hazard_detected <= '1';
+				stall <= stall - 1;
+				pc_out <= pc_in;
+			else
+				new_cycle <= '1';
+				hazard_detected <= '0';
+			end if;
+		end if;
+		
+		-- dont know if it cause a data race for rd_register_file or not
+		if op = "1111" then 
+			pc_out <= instruction(11 downto 0) & "0000";
+			stall <= 1;
+			hazard_detected <= '1';
+		elsif op = "1110" and rd_register_file(0) = '0' then
+			pc_out <= std_logic_vector(unsigned(pc_in) + 2 + unsigned(immediate&'0'));
+			stall <= 1;
+			hazard_detected <= '1';
+		else
+			pc_out <= std_logic_vector(unsigned(pc_in) + 1);
+		end if;	
+	
+		
+	end process;
+	
 	
 	
 

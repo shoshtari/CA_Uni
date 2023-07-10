@@ -37,6 +37,8 @@ component instruction_memory IS
 
 END component;
 
+SIGNAL fetched_instruction : std_logic_vector(15 downto 0);
+SIGNAL op : std_logic_vector(3 downto 0);
 
 BEGIN
 	
@@ -47,7 +49,15 @@ BEGIN
 	write_address => write_address,
 	write_data => write_data,
 	clk => clk,
-	data_out => data
-	);
+	data_out => fetched_instruction
+	);							   
+	
+	process(fetched_instruction)
+	begin
+		if fetched_instruction(15 downto 12) = "1110" then
+			fetched_instruction(11 downto 8) <= "1001";
+		end if;
+		data <= fetched_instruction;
+	end process;
     
 END gate_level;
