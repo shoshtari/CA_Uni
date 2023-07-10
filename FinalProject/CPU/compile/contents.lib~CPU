@@ -1,4 +1,4 @@
-286
+296
 ~E 1 "../src/adder.vhd" 4 Adder16
 ~A 1 "../src/adder.vhd" 13 adder_struc
 ~E 1 "../src/alu.vhd" 8 alu
@@ -31,5 +31,5 @@
 ~A 1 "../src/register_file.vhd" 29 gate_level
 ~E 1 "../src/TestBench/register_file_TB.vhd" 7 register_file_tb
 ~A 1 "../src/TestBench/register_file_TB.vhd" 10 TB_ARCHITECTURE
-~C 1 "../src/TestBench/cap23_TB.vhd" 142 testbench_for_cap23
+~C 1 "../src/TestBench/cap23_TB.vhd" 124 testbench_for_cap23
 ~C 1 "../src/TestBench/register_file_TB.vhd" 94 testbench_for_register_file

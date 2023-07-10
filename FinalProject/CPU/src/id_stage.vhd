@@ -94,6 +94,7 @@ SIGNAL sw_control : std_logic;
 
 SIGNAL hazard_detected : std_logic;	
 SIGNAL new_cycle : std_logic;
+
 SIGNAL rd_register_file : std_logic_vector(15 downto 0);
 
 BEGIN
@@ -128,7 +129,11 @@ BEGIN
     data_out1 => rd_register_file,
 	data_out2 => rs
 	);
-	rd <= rd_register_file;
+	
+	with op select
+	rd <= (others => '0') when "1100",
+		  rd_register_file when others;
+	
 	rd_address <= rd_address_in;
 	
 	c : controller

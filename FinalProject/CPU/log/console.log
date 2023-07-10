@@ -1,128 +1,18 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8979 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  2:52 AM, Tuesday, July 11, 2023
-#  Simulation has been initialized
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 200 ns
-run 200 ns
-# KERNEL: stopped at time: 400 ns
-run 200 ns
-# KERNEL: stopped at time: 600 ns
-run 200 ns
-# KERNEL: stopped at time: 800 ns
-run 200 ns
-# KERNEL: stopped at time: 1 us
-run 200 ns
-# KERNEL: stopped at time: 1200 ns
-run 200 ns
-# EXECUTION:: NOTE   : SET: 1
-# EXECUTION:: Time: 1300 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/pc,  Process: line__22.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1400 ns
-run 200 ns
-# EXECUTION:: NOTE   : SET: 2
-# EXECUTION:: Time: 1500 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/pc,  Process: line__22.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1600 ns
-run 200 ns
-# EXECUTION:: NOTE   : SET: 3
-# EXECUTION:: Time: 1700 ns,  Iteration: 1,  Instance: /cap23_tb/UUT/pc,  Process: line__22.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1700 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 1800 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# EXECUTION:: NOTE   : SET: 1
-# EXECUTION:: Time: 2 us,  Iteration: 1,  Instance: /cap23_tb/UUT/pc,  Process: line__22.
-# KERNEL: stopped at time: 2 us
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-acom -O3 -e 100 -work cpu -2002  $dsn/src/master_slave_unsigned.vhd
+acom -O3 -e 100 -work cpu -2002  $dsn/src/CAP23.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/master_slave_unsigned.vhd
-# Compile Entity "master_slave_unsigned"
-# Compile Architecture "gate_level" of Entity "master_slave_unsigned"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/CAP23.vhd
+# Compile Entity "cap23"
+# Compile Architecture "gate_level" of Entity "cap23"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'instruction_fetch' instantiated in architecture 'gate_level' differ from the contents available during the compilation of this architecture.
 # ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
@@ -136,11 +26,11 @@ acom -O3 -e 100 -work cpu -2002  $dsn/src/master_slave_unsigned.vhd
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
+# Allocation: Simulator allocated 9549 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:05 AM, Tuesday, July 11, 2023
+#  2:43 AM, Tuesday, July 11, 2023
 #  Simulation has been initialized
-run 200 ns
+run 100 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -175,8 +65,12 @@ run 200 ns
 # KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
 # KERNEL: stopped at time: 200 ns
-run 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
 # KERNEL: stopped at time: 400 ns
 run 200 ns
 # KERNEL: stopped at time: 600 ns
@@ -187,220 +81,65 @@ run 200 ns
 run 200 ns
 # KERNEL: stopped at time: 1200 ns
 run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 1400 ns
 run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
+# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 1600 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 1600 ns
 run 200 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1700 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: Time: 1800 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 1800 ns
 run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2 us
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:05 AM, Tuesday, July 11, 2023
-#  Simulation has been initialized
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 200 ns
-run 200 ns
-# KERNEL: stopped at time: 400 ns
-run 200 ns
-# KERNEL: stopped at time: 600 ns
-run 200 ns
-# KERNEL: stopped at time: 800 ns
-run 200 ns
-# KERNEL: stopped at time: 1 us
-run 200 ns
-# KERNEL: stopped at time: 1200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1400 ns
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1600 ns
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1700 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 1800 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2 us
 run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2200 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 2200 ns
 run 200 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2400 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
+# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2400 ns
 run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2600 ns
 run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2800 ns
 run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2900 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3 us,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 3 us
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 3100 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 3200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 3400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
 endsim
 # VSIM: Simulation has finished.
 asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'instruction_fetch' instantiated in architecture 'gate_level' differ from the contents available during the compilation of this architecture.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
@@ -416,300 +155,9 @@ asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
+# Allocation: Simulator allocated 9549 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:06 AM, Tuesday, July 11, 2023
-#  Simulation has been initialized
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 200 ns
-run 200 ns
-# KERNEL: stopped at time: 400 ns
-run 200 ns
-# KERNEL: stopped at time: 600 ns
-run 200 ns
-# KERNEL: stopped at time: 800 ns
-run 200 ns
-# KERNEL: stopped at time: 1 us
-run 200 ns
-# KERNEL: stopped at time: 1200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1400 ns
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1600 ns
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1700 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 1800 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2 us
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2200 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 2200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2400 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 2400 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2600 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2800 ns
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2900 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3 us,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 3 us
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 3100 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 3200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 3400 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 3600 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 3600 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 3800 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 3800 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:07 AM, Tuesday, July 11, 2023
-#  Simulation has been initialized
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 200 ns
-run 200 ns
-# KERNEL: stopped at time: 400 ns
-run 200 ns
-# KERNEL: stopped at time: 600 ns
-run 200 ns
-# KERNEL: stopped at time: 800 ns
-run 200 ns
-# KERNEL: stopped at time: 1 us
-run 200 ns
-# KERNEL: stopped at time: 1200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1400 ns
-run 200 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1500 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 1600 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
-# Compile Entity "cap23_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
-# Compile Configuration "TESTBENCH_FOR_cap23"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:08 AM, Tuesday, July 11, 2023
+#  2:44 AM, Tuesday, July 11, 2023
 #  Simulation has been initialized
 run 200 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -775,150 +223,38 @@ run 200 ns
 # KERNEL: stopped at time: 1600 ns
 run 200 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 1800 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
 # KERNEL: stopped at time: 1800 ns
 run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2 us,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2 us,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2 us,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2 us,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2 us,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2 us,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: stopped at time: 2 us
 run 200 ns
 # KERNEL: stopped at time: 2200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2400 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 2400 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2600 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 2600 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 2800 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 2800 ns
-run 200 ns
-# KERNEL: stopped at time: 3 us
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 3200 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 3200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3300 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 3400 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 3400 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3600 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 3600 ns
-run 200 ns
-# KERNEL: stopped at time: 3800 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 3900 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 4 us,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 4 us
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4100 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 4200 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 4200 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 4400 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 4400 ns
-run 200 ns
-# KERNEL: stopped at time: 4600 ns
 endsim
 # VSIM: Simulation has finished.
+acom -O3 -e 100 -work cpu -2002  $dsn/src/controller.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "gate_level" of Entity "controller"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
 asim -O5 +access +r +m+cap23_tb cap23_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'instruction_fetch' instantiated in architecture 'gate_level' differ from the contents available during the compilation of this architecture.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
-acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
-# Compile Entity "cap23_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
-# Compile Configuration "TESTBENCH_FOR_cap23"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
 # ELAB2: Elaboration final pass...
@@ -931,9 +267,9 @@ acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8979 kernel=144 sdf=0)
+# Allocation: Simulator allocated 9550 kB (elbread=427 elab2=8978 kernel=144 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:09 AM, Tuesday, July 11, 2023
+#  3:04 AM, Tuesday, July 11, 2023
 #  Simulation has been initialized
 run 200 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -960,118 +296,4 @@ run 200 ns
 # KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: stopped at time: 200 ns
-run 200 ns
-# KERNEL: stopped at time: 400 ns
-run 200 ns
-# KERNEL: stopped at time: 600 ns
-run 200 ns
-# KERNEL: stopped at time: 800 ns
-run 200 ns
-# KERNEL: stopped at time: 1 us
-run 200 ns
-# KERNEL: stopped at time: 1200 ns
-run 200 ns
-# KERNEL: stopped at time: 1400 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1500 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1600 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 1600 ns
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 1700 ns,  Iteration: 3,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 1800 ns,  Iteration: 2,  Instance: /cap23_tb/UUT/mem_stage_comp/DM,  Process: line__27.
-# KERNEL: stopped at time: 1800 ns
-run 200 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run 200 ns
-# KERNEL: stopped at time: 2200 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run 200 ns
-# KERNEL: stopped at time: 2400 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run 200 ns
-# KERNEL: stopped at time: 2600 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run 200 ns
-acom -O3 -e 100 -work cpu -2002  $dsn/src/TestBench/cap23_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/mpc/Desktop/ca_project/FinalProject/CPU/src/TestBench/cap23_TB.vhd
-# Compile Entity "cap23_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "cap23_tb"
-# Compile Configuration "TESTBENCH_FOR_cap23"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 9551 kB (elbread=427 elab2=8980 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\mpc\Desktop\ca_project\FinalProject\CPU\src\wave.asdb
-#  4:09 AM, Tuesday, July 11, 2023
-#  Simulation has been initialized
-run 200 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /cap23_tb/UUT/mem_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /cap23_tb/UUT/exec_stage_comp/Alu1,  Process: line__40.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  I
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithm

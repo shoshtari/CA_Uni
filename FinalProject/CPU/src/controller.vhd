@@ -45,6 +45,10 @@ BEGIN
 			  "00" when "1000",
 	 		  "10" when others; -- actually it must not happen, i set it to and because it is rarer and we can debug it easily
 	
-	alu_src <= op(3) nor op(2);
+	-- addi, addm, lw, sw, clr, mov
+	-- 0011, 0001, 0111, 1001, 1011, 1100
+	with op select
+	alu_src <= '1' when "0011" | "0001" | "0111" | "1001" | "1011" | "1100",
+			   '0' when others;
 	
 END gate_level;

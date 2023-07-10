@@ -147,7 +147,7 @@ SIGNAL pc_get : unsigned(15 downto 0);
 SIGNAL instruction_get : std_logic_vector(15 downto 0);
 SIGNAL instruction_set : std_logic_vector(15 downto 0);
 
--- rd addresss,	rs,	rd,	immediate,	wb,	mw,	aluop,	alusrc,	is_addm,	status write, is lw	
+-- rd addresss,	rd,	rs,	immediate,	wb,	mw,	aluop,	alusrc,	is_addm,	status write, is lw	
 -- 4			16,	16,	16,			1,	1,	2,		1,		1,			1,				1
 SIGNAL id_to_exec_get: std_logic_vector(59 downto 0);
 SIGNAL id_to_exec_set: std_logic_vector(59 downto 0);
@@ -252,8 +252,8 @@ BEGIN
 	write_data2 => static_data_to_write,
 	
 	rd_address => id_to_exec_set(59 downto 56),
-	rs => id_to_exec_set(55 downto 40),
-	rd => id_to_exec_set(39 downto 24),
+	rd => id_to_exec_set(55 downto 40),
+	rs => id_to_exec_set(39 downto 24),
 	extended_immediate => id_to_exec_set(23 downto 8),
 	write_back => id_to_exec_set(7),
 	mem_write => id_to_exec_set(6),
@@ -272,8 +272,8 @@ BEGIN
 	-- exec
 	exec_stage_comp : exec_stage
 	port map(
-	D1 => id_to_exec_get(55 downto 40),
-	D2 => id_to_exec_get(39 downto 24),
+	D1 => id_to_exec_get(39 downto 24),
+	D2 => id_to_exec_get(55 downto 40),
 	Immed => id_to_exec_get(23 downto 8),
 	
 	AluOP => id_to_exec_get(5 downto 4),

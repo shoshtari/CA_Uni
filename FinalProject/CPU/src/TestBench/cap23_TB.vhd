@@ -68,7 +68,8 @@ begin
 		
 process
 	Variable row          : line;
-	Variable instruction  : std_logic_vector(15 downto 0);  
+	Variable instruction  : std_logic_vector(15 downto 0);
+	Variable ins_count : integer := 0;
 begin  	  
 --	if not endfile(file_handler) then
 --	
@@ -94,40 +95,21 @@ begin
 		wait for 100ns;
 		clk <= '0';	
 		wait for 100ns;	
-		im_write_address <= im_write_address + 1;
+		im_write_address <= im_write_address + 1; 
+		ins_count := ins_count + 1;
   	end loop;
-	  
+	
 	reset <= '0';
 	im_reg_write <= '0';
-	clk <='1';
 	
-	wait for 100ns;
-	clk <='0';
-	wait for 100ns;
-	clk <='1';
-	wait for 100ns;	
-	clk <='0';
-	wait for 100ns;
-	clk <='1';
-	wait for 100ns;
-	clk <='0';
-	wait for 100ns;
-	clk <='1';
-	wait for 100ns;
-	clk <='0';
-	wait for 100ns;
-	clk <='1';
-	wait for 100ns;	
-	clk <='0';
-	wait for 100ns;
-	clk <='1';
-	wait for 100ns;
-	clk <='0';
-	wait for 100ns;
-	clk <='1';
-	wait for 100ns;
-	
-	
+	for i in 0 to ins_count + 1 loop
+		clk <= '1';
+		wait for 100ns;
+		clk <= '0';
+		wait for 100ns;
+	end loop;
+					
+
 	wait;
   	
 	

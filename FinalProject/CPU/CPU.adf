@@ -22,7 +22,7 @@ FLOWTOOLS=NONE
 FAMILY=
 
 [HierarchyViewer]
-HierarchyInformation=cap23_tb|TB_ARCHITECTURE|0
+HierarchyInformation=cap23_tb|TB_ARCHITECTURE|0 register_file_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
