@@ -308,9 +308,8 @@ BEGIN
 	
 	
 	static_data_to_write <= "000000000000" & mem_to_wb_get(3 downto 0);
-	reg_read <= not reset;
-	pc_output <= (others => '0');
-	--pc_output <= pc_get;
+	reg_read <= not reset;		
+	pc_output <= pc_get;
 	
 	instruction_output <= instruction_get;
 	id_to_exe_output <= id_to_exec_get;

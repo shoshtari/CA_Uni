@@ -17,7 +17,7 @@ REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
 [HierarchyViewer]
-HierarchyInformation=cap23|gate_level|0
+HierarchyInformation=cap23_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 [SpecTracer]
