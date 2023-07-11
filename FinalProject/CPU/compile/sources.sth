@@ -21,5 +21,6 @@ C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/exec_stage.vhd=S
 C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/id_stage.vhd=S
 C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/if_stage.vhd=S
 C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/mid_register.vhd=S
+C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/master_slave_unsigned.vhd=S
 C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/CAP23.vhd=S
 C:\Users\mpc\Desktop\ca_project\FinalProject\CPU/src/TestBench/cap23_TB.vhd=S

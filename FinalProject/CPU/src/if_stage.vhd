@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 ENTITY instruction_fetch IS
 	PORT(
 
-    address   : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    read_address   : IN unsigned(15 DOWNTO 0);
     clk : IN STD_LOGIC; -- clock.
 	
 	-- register file write data:
@@ -13,7 +13,7 @@ ENTITY instruction_fetch IS
 	
 	
 	-- write ports of instruction memory
-	write_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	write_address   : IN unsigned(15 DOWNTO 0);
 	write_data : IN std_logic_vector(15 downto 0);
 
     reg_write : IN std_logic
@@ -25,8 +25,8 @@ ARCHITECTURE gate_level OF instruction_fetch IS
 
 component instruction_memory IS
 	PORT(
-	read_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-	write_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	read_address   : IN unsigned(9 DOWNTO 0);
+	write_address   : IN unsigned(9 DOWNTO 0);
 	write_data : IN std_logic_vector(15 downto 0);
 
     reg_write : IN std_logic;
@@ -44,9 +44,9 @@ BEGIN
 	
 	instruction_file : instruction_memory
 	port map(
-	read_address => address(15 downto 6),
+	read_address => read_address(9 downto 0),
 	reg_write => reg_write,
-	write_address => write_address,
+	write_address => write_address(9 downto 0),
 	write_data => write_data,
 	clk => clk,
 	data_out => fetched_instruction

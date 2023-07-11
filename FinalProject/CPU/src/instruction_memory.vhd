@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 ENTITY instruction_memory IS
 	PORT(
-	read_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-	write_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	read_address   : IN unsigned(9 DOWNTO 0);
+	write_address   : IN unsigned(9 DOWNTO 0);
 	write_data : IN std_logic_vector(15 downto 0);
 
     reg_write : IN std_logic;
@@ -27,13 +27,13 @@ process (clk)
 variable index : integer;						  
 begin  	 
 	if falling_edge(clk) then
-		index := to_integer(unsigned(write_address));
+		index := to_integer(write_address);
 		if reg_write = '1' then	  
 			data(index) <= write_data;
 		end if;
 
 
-		index := to_integer(unsigned(read_address));
+		index := to_integer(read_address);
 		data_out <= data(index);
 	end if;
 	  

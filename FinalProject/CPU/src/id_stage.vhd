@@ -6,7 +6,7 @@ ENTITY instruction_decode IS
 	PORT(
 
     instruction : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	pc_in : IN std_logic_vector(15 downto 0);
+	pc_in : IN unsigned(15 downto 0);
 	
 	clk : IN STD_LOGIC; -- clock.
 
@@ -25,7 +25,7 @@ ENTITY instruction_decode IS
 	rs : out std_logic_vector(15 downto 0);
 	rd : out std_logic_vector(15 downto 0);
 	rd_address : out std_logic_vector(3 downto 0);
-	pc_out : out std_logic_vector(15 downto 0);
+	pc_out : out unsigned(15 downto 0);
 	
 	extended_immediate : out std_logic_vector(15 downto 0);
 
@@ -146,40 +146,38 @@ BEGIN
 	mem_write <= mw_control and not hazard_detected;
 	status_write <= sw_control and not hazard_detected;
 	
-	-- pc_out <= std_logic_vector(unsigned(pc_in) + 4);
+	pc_out <= pc_in + 1;
+	
 	-- hazard detection
 	
-	process(clk)
-	begin
-		if rising_edge(clk) then
-			if stall > 0 then 
-				hazard_detected <= '1';
-				stall <= stall - 1;
-				pc_out <= pc_in;
-			else
-				new_cycle <= '1';
-				hazard_detected <= '0';
-			end if;
-		end if;
-		
-		-- dont know if it cause a data race for rd_register_file or not
-		if op = "1111" then 
-			pc_out <= instruction(11 downto 0) & "0000";
-			stall <= 1;
-			hazard_detected <= '1';
-		elsif op = "1110" and rd_register_file(0) = '0' then
-			pc_out <= std_logic_vector(unsigned(pc_in) + 1 + unsigned(immediate));
-			stall <= 1;
-			hazard_detected <= '1';
-		else
-			pc_out <= std_logic_vector(unsigned(pc_in) + 1);
-		end if;	
-	
-		
-	end process;
-	
-	
-	
-
+--	process(clk)
+--	begin
+--		if rising_edge(clk) then
+--			
+--			if stall > 0 then 
+--				hazard_detected <= '1';
+--				stall <= stall - 1;
+--				pc_out <= pc_in;
+--			else
+--				new_cycle <= '1';
+--				hazard_detected <= '0';
+--			end if;
+--			
+--			-- dont know if it cause a data race for rd_register_file or not
+--			if op = "1111" then 
+--				pc_out <= instruction(11 downto 0) & "0000";
+--				stall <= 1;
+--				hazard_detected <= '1';
+--			elsif op = "1110" and rd_register_file(0) = '0' then
+--				pc_out <= std_logic_vector(unsigned(pc_in) + 1 + unsigned(immediate));
+--				stall <= 1;
+--				hazard_detected <= '1';
+--			else
+--				pc_out <= std_logic_vector(unsigned(pc_in) + 1);
+--			end if;	
+--		
+--		end if;
+--		
+--	end process;
 
 END gate_level;

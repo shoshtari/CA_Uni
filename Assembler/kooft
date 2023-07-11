@@ -1,0 +1,3 @@
+mov d0, 50
+mov d1, 50
+add d0, d1

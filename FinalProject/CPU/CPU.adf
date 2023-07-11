@@ -3,25 +3,35 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=cpu
+
 [Library]
 CPU=.\CPU\CPU.lib
+
 [$LibMap$]
 CPU=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+
 [HierarchyViewer]
 HierarchyInformation=cap23_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
+
 [SpecTracer]
 WindowVisible=0
+
+[Groups]
+TestBench=1
+
 [Files]
 /register_file.vhd=-1
 /mid_register.vhd=-1
@@ -35,10 +45,12 @@ WindowVisible=0
 /mem_stage.vhd=-1
 /exec_stage.vhd=-1
 /CAP23.vhd=-1
+/master_slave_unsigned.vhd=-1
 TestBench/cap23_TB.vhd=-1
 TestBench/cap23_TB_runtest.do=-1
 TestBench/register_file_TB.vhd=-1
 TestBench/register_file_TB_runtest.do=-1
+
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
 .\src\mid_register.vhd=VHDL Source Code
@@ -52,9 +64,9 @@ TestBench/register_file_TB_runtest.do=-1
 .\src\mem_stage.vhd=VHDL Source Code
 .\src\exec_stage.vhd=VHDL Source Code
 .\src\CAP23.vhd=VHDL Source Code
+.\src\master_slave_unsigned.vhd=VHDL Source Code
 .\src\TestBench\cap23_TB.vhd=VHDL Test Bench
 .\src\TestBench\cap23_TB_runtest.do=Macro
 .\src\TestBench\register_file_TB.vhd=VHDL Test Bench
 .\src\TestBench\register_file_TB_runtest.do=Macro
-[Groups]
-TestBench=1
+

@@ -10,5 +10,6 @@
 .\src\mem_stage.vhd
 .\src\exec_stage.vhd
 .\src\CAP23.vhd
+.\src\master_slave_unsigned.vhd
 .\src\TestBench\cap23_TB.vhd
 .\src\TestBench\register_file_TB.vhd

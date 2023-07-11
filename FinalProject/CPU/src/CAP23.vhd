@@ -9,12 +9,12 @@ ENTITY cap23 IS
 	reset : IN std_logic;
 	
 	-- instruction memory
-	im_write_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	im_write_address   : IN unsigned(15 DOWNTO 0);
 	im_write_data : IN std_logic_vector(15 downto 0);
 
     im_reg_write : IN std_logic;
 	
-	pc_output : OUT std_logic_vector(15 downto 0);
+	pc_output : OUT unsigned(15 downto 0);
 	instruction_output: OUT std_logic_vector(15 downto 0);
 	id_to_exe_output : OUT std_logic_vector(59 downto 0);
 	exec_to_mem_output : OUT std_logic_vector(44 downto 0);
@@ -43,10 +43,22 @@ component mid_reg IS
 );
 END component;
 
+component master_slave_unsigned IS
+	PORT(
+	input : IN unsigned(15 downto 0);							  
+	reset : IN STD_LOGIC; -- async clear.
+	
+    clk : IN STD_LOGIC; 
+	
+    output   : OUT unsigned(15 downto 0)
+);
+END component;
+
+
 component instruction_fetch IS
 	PORT(
 
-    address   : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    read_address   : IN unsigned(15 DOWNTO 0);
     clk : IN STD_LOGIC; -- clock.
 	
 	-- register file write data:
@@ -54,7 +66,7 @@ component instruction_fetch IS
 	
 	
 	-- write ports of instruction memory
-	write_address   : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	write_address   : IN unsigned(15 DOWNTO 0);
 	write_data : IN std_logic_vector(15 downto 0);
 
     reg_write : IN std_logic
@@ -67,7 +79,7 @@ component instruction_decode IS
 
     instruction : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	clk : IN STD_LOGIC; -- clock.
-	pc_in : IN std_logic_vector(15 downto 0);
+	pc_in : IN unsigned(15 downto 0);
 	
 	reg_read : IN std_logic;
 	-- register file write pins exported
@@ -85,7 +97,7 @@ component instruction_decode IS
 	rd : out std_logic_vector(15 downto 0);
 	rd_address : out std_logic_vector(3 downto 0);
 	extended_immediate : out std_logic_vector(15 downto 0);
-	pc_out : out std_logic_vector(15 downto 0);
+	pc_out : out unsigned(15 downto 0);
 	
 	write_back : out std_logic;
 	mem_write : out std_logic;
@@ -128,8 +140,8 @@ component mem_stage is
 		);
 end component;
 
-SIGNAL pc_set : std_logic_vector(15 downto 0);
-SIGNAL pc_get : std_logic_vector(15 downto 0);
+SIGNAL pc_set : unsigned(15 downto 0);
+SIGNAL pc_get : unsigned(15 downto 0);
 
 
 SIGNAL instruction_get : std_logic_vector(15 downto 0);
@@ -157,16 +169,14 @@ SIGNAL reg_read : std_logic;
 BEGIN			  																	  
 	-- defining registers
 	-- pc
-	pc : mid_reg
-	generic map(
-	size =>	16
-	)
+	pc : master_slave_unsigned
 	port map(
 	input => pc_set,
 	reset => reset,
 	clk => clk,
 	output => pc_get
 	);
+	
 	-- instruction (IF/ID)
 	instruction : mid_reg
 	generic map(
@@ -215,7 +225,7 @@ BEGIN
 	-- if
 	if_stage : instruction_fetch
 	port map(
-	address => pc_get,
+	read_address => pc_get,
 	clk => clk,
 	data => instruction_set,
 	

@@ -16,12 +16,12 @@ architecture TB_ARCHITECTURE of cap23_tb is
 	port(
 		clk : in STD_LOGIC;
 		reset : in STD_LOGIC;
-		im_write_address : in STD_LOGIC_VECTOR(9 downto 0);
+		im_write_address : in unsigned(15 downto 0);
 		im_write_data : in STD_LOGIC_VECTOR(15 downto 0);
 		
 		im_reg_write : in STD_LOGIC;
 		
-		pc_output : OUT std_logic_vector(15 downto 0);
+		pc_output : OUT unsigned(15 downto 0);
 		instruction_output: OUT std_logic_vector(15 downto 0);
 		id_to_exe_output : OUT std_logic_vector(59 downto 0);
 		exec_to_mem_output : OUT std_logic_vector(44 downto 0);
@@ -33,11 +33,11 @@ architecture TB_ARCHITECTURE of cap23_tb is
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
 	signal clk : STD_LOGIC;
 	signal reset : STD_LOGIC;
-	signal im_write_address : STD_LOGIC_VECTOR(9 downto 0);
+	signal im_write_address : unsigned(15 downto 0);
 	signal im_write_data : STD_LOGIC_VECTOR(15 downto 0);
 	signal im_reg_write : STD_LOGIC;
 	
-	signal pc_output : std_logic_vector(15 downto 0);
+	signal pc_output : unsigned(15 downto 0);
 	signal instruction_output: std_logic_vector(15 downto 0);
 	signal id_to_exe_output : std_logic_vector(59 downto 0);
 	signal exec_to_mem_output : std_logic_vector(44 downto 0);
@@ -81,7 +81,7 @@ begin
 	reset <= '1'; 
 	clk <= '1'; 
 	im_reg_write <= '1'; 
-	im_write_address <= "0000000000";
+	im_write_address <= "0000000000000000";
 	
 	wait for 100ns;
 	for i in 0 to 100000 loop
@@ -94,13 +94,15 @@ begin
 		wait for 100ns;
 		clk <= '0';	
 		wait for 100ns;	
-		im_write_address <= std_logic_vector(unsigned(im_write_address) + 1);
+		im_write_address <= im_write_address + 1;
   	end loop;
 	  
 	reset <= '0';
 	im_reg_write <= '0';
-	clk <='0';
+	clk <='1';
 	
+	wait for 100ns;
+	clk <='0';
 	wait for 100ns;
 	clk <='1';
 	wait for 100ns;	
@@ -112,6 +114,21 @@ begin
 	wait for 100ns;
 	clk <='1';
 	wait for 100ns;
+	clk <='0';
+	wait for 100ns;
+	clk <='1';
+	wait for 100ns;	
+	clk <='0';
+	wait for 100ns;
+	clk <='1';
+	wait for 100ns;
+	clk <='0';
+	wait for 100ns;
+	clk <='1';
+	wait for 100ns;
+	
+	
+	wait;
   	
 	
 	
